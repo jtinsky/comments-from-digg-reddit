@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Comments from Digg, Reddit
+Plugin Name: Comments from Digg and Reddit
 Plugin URI: http://valums.com/wordpress-comments-digg-reddit/
 Description: This plugin imports comments about your posts from Digg and Reddit.
 Version: 0.1
