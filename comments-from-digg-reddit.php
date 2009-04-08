@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Comments from Digg and Reddit
+Plugin Name: Comments from Digg, Reddit
 Plugin URI: http://valums.com/wordpress-comments-digg-reddit/
 Description: This plugin imports comments about your posts from Digg and Reddit.
 Version: 0.1
@@ -79,10 +79,13 @@ class CommentGetter {
 			
 			self::$postData['lastAttempt'] = time();
 			
+			// Update database, so no more connections to server will open
+			update_post_meta(self::$postID, 'commentGetterData', self::$postData);	
+						
 			self::updateComments('reddit');
 			self::updateComments('digg');
 			
-			// Update data
+			// Update data with new lastUpdate values
 			update_post_meta(self::$postID, 'commentGetterData', self::$postData);						
 		}
 		
