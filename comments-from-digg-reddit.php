@@ -3,7 +3,7 @@
 Plugin Name: Comments from Digg, Reddit
 Plugin URI: http://valums.com/wordpress-comments-digg-reddit/
 Description: This plugin imports comments about your posts from Digg and Reddit.
-Version: 0.1
+Version: 0.2
 Author: Andrew Valums
 Author URI: http://valums.com
 */
@@ -169,7 +169,7 @@ class CommentGetter {
 		}
 		
 		if (isset($latest)){
-			self::$postData['lastUpdate'][$type] = $latest;
+			self::$postData['lastUpdate'][$type] = max($latest, self::$postData['lastUpdate'][$type]);
 		}
 	}
 	
