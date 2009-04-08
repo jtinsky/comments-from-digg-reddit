@@ -12,6 +12,8 @@ This plugin imports comments about your posts from Digg and Reddit in real-time.
 
 [Release Post](http://valums.com/wordpress-comments-digg-reddit/)
 
+Warning! It requires PHP5 to run!
+
 Features
 	
 	* Caches requests for 10 minutes.
