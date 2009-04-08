@@ -1,4 +1,4 @@
-=== Comments from Digg and Reddit ===
+=== Comments from Digg, Reddit ===
 Tags: comments, digg, reddit, seo
 Requires at least: 2.1
 Tested up to: 2.7
